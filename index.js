@@ -22,6 +22,13 @@ const kodlar = {
     text: "🎬 Ushbu kino video dag! 👇",
     img: "http://asilmedia.org/uploads/mini/fullstory/e9/265x372xa6f46706c1e3d64622c4745b665f61.jpg.pagespeed.ic.i7SF_FeTx1.webp",
   },
+  3: {
+    type: "photo",
+    content:
+    "http://asilmedia.org/11537-uol-strit-borisi-uol-street-borisi-uzbek-tilida-2013-ozbekcha-tarjima-kino-hd.html",
+    text: "🎬 Ushbu kino video dag! 👇",
+    img: "http://asilmedia.org/uploads/mini/fullstory/9e/265x372xfeac3b5614945de209f04086434de6.jpg.pagespeed.ic.HX_7fdGCa_.webp",
+  },
 };
 
 // Foydalanuvchi obuna bo'lganligini tekshirish
