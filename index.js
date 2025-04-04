@@ -41,7 +41,7 @@ const kodlar = {
     content:
       "http://asilmedia.org/12875-afsona-legenda-uzbek-tilida-2015-ozbekcha-tarjima-kino-hd.html",
     text: "🎬 Ushbu kino video dag! 👇",
-    img: "hhttp://asilmedia.org/uploads/mini/fullstory/23/265x372xb38c7c4da6946be1a2310e021939b2.jpg.pagespeed.ic.xIc5Qo-7qA.webp",
+    img: "http://asilmedia.org/uploads/mini/fullstory/23/265x372xb38c7c4da6946be1a2310e021939b2.jpg.pagespeed.ic.xIc5Qo-7qA.webp",
   },
 };
 
