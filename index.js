@@ -11,23 +11,37 @@ const kodlar = {
   1: {
     type: "photo",
     content:
-    "http://asilmedia.org/15272-vikram-vedha-hind-kinosi-uzbek-tilida-2022-ozbekcha-tarjima-kino-hd.html",
+      "http://asilmedia.org/15272-vikram-vedha-hind-kinosi-uzbek-tilida-2022-ozbekcha-tarjima-kino-hd.html",
     text: "🎬 Ushbu kino video dag! 👇",
     img: "http://asilmedia.org/uploads/mini/fullstory/72/4de6d32df4304214698299d9f17fc0.jpg",
   },
   2: {
     type: "photo",
     content:
-    "http://asilmedia.org/16946-sirli-yirtqich-bayou-2025-hd-uzbek-tilida-tarjima-kino-skachat.html",
+      "http://asilmedia.org/16946-sirli-yirtqich-bayou-2025-hd-uzbek-tilida-tarjima-kino-skachat.html",
     text: "🎬 Ushbu kino video dag! 👇",
     img: "http://asilmedia.org/uploads/mini/fullstory/e9/265x372xa6f46706c1e3d64622c4745b665f61.jpg.pagespeed.ic.i7SF_FeTx1.webp",
   },
   3: {
     type: "photo",
     content:
-    "http://asilmedia.org/11537-uol-strit-borisi-uol-street-borisi-uzbek-tilida-2013-ozbekcha-tarjima-kino-hd.html",
+      "http://asilmedia.org/11537-uol-strit-borisi-uol-street-borisi-uzbek-tilida-2013-ozbekcha-tarjima-kino-hd.html",
     text: "🎬 Ushbu kino video dag! 👇",
     img: "http://asilmedia.org/uploads/mini/fullstory/9e/265x372xfeac3b5614945de209f04086434de6.jpg.pagespeed.ic.HX_7fdGCa_.webp",
+  },
+  4: {
+    type: "photo",
+    content:
+      "http://asilmedia.org/14912-moviy-qongiz-kok-hasharot-uzbek-tilida-2023-ozbekcha-tarjima-film-full-hd-skachat.html",
+    text: "🎬 Ushbu kino video dag! 👇",
+    img: "http://asilmedia.org/uploads/mini/fullstory/8b/f9120b0db4cb5e56c413120ff9ac48.jpg",
+  },
+  5: {
+    type: "photo",
+    content:
+      "http://asilmedia.org/12875-afsona-legenda-uzbek-tilida-2015-ozbekcha-tarjima-kino-hd.html",
+    text: "🎬 Ushbu kino video dag! 👇",
+    img: "hhttp://asilmedia.org/uploads/mini/fullstory/23/265x372xb38c7c4da6946be1a2310e021939b2.jpg.pagespeed.ic.xIc5Qo-7qA.webp",
   },
 };
 
@@ -64,7 +78,7 @@ bot.on("message", async (msg) => {
   const chatId = msg.chat.id;
   const userId = msg.from.id;
   const text = msg.text;
-  
+
   const isSubscribed = await isUserSubscribed(userId);
   if (!isSubscribed) {
     bot.sendMessage(
@@ -74,15 +88,12 @@ bot.on("message", async (msg) => {
     );
     return;
   }
-  
+
   if (text === "/start") {
-    bot.sendMessage(
-      chatId,
-      "✅Endi kodni yuboring."
-    );
+    bot.sendMessage(chatId, "✅Endi kodni yuboring.");
     return;
   }
-  
+
   if (kodlar[text]) {
     if (kodlar[text].type === "photo") {
       bot.sendPhoto(chatId, kodlar[text].img, {
@@ -104,7 +115,7 @@ bot.on("message", async (msg) => {
 bot.on("callback_query", async (query) => {
   const userId = query.from.id;
   const chatId = query.message.chat.id;
-  
+
   const isSubscribed = await isUserSubscribed(userId);
   if (isSubscribed) {
     bot.sendMessage(chatId, "✅ Endi kodni yuboring.");
@@ -116,4 +127,3 @@ bot.on("callback_query", async (query) => {
     );
   }
 });
-
