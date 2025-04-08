@@ -43,6 +43,13 @@ const kodlar = {
     text: "🎬 Ushbu kino video dag! 👇",
     img: "http://asilmedia.org/uploads/mini/fullstory/23/265x372xb38c7c4da6946be1a2310e021939b2.jpg.pagespeed.ic.xIc5Qo-7qA.webp",
   },
+  6: {
+    type: "photo",
+    content:
+      "https://uzmovi.tv/tarjima-kinolarri/7261-minecraft-maynkraft-minekraft-uzbek-ozbek-tilida-kino-film-premyera.html",
+    text: "🎬 Ushbu kino video dag! 👇",
+    img: "https://images.uzmovi.tv/2025-04-05/686b55689b5fb8bd8108e2ca52066bbc.jpg",
+  },
 };
 
 // Foydalanuvchi obuna bo'lganligini tekshirish
